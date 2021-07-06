@@ -1,0 +1,15 @@
+.loadout-wraper {
+    background-color: darken($purple, 20%);
+    border: 4px solid $purple;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 5px;
+}
+
+.loadout-wraper--items {
+    display: flex;
+    flex-direction: column;
+
+}

@@ -1,0 +1,19 @@
+.item-stats--box {
+    background-color: $purple;
+    border: 4px solid darken($purple, 40%);
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+}
+
+.item-stats--box h1 {
+    margin-bottom: 50px;
+}
+
+.item-stats-masterwork {
+    border: 4px solid gold;
+    border-radius: 10px;
+}
+
+
+

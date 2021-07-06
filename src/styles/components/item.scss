@@ -1,0 +1,31 @@
+.item-wraper {
+    background-color: $purple;
+    border: 2px solid $purple;
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.item-masterwork {
+    border: 2px solid gold;
+    border-radius: 5px;
+}
+
+.item-name {
+    text-align: center;
+    margin: 0;
+}
+
+.item-delete {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: -7px;
+    right: -7px;
+    font-size: 10px;
+    padding: 0;
+    border: 0;
+}
