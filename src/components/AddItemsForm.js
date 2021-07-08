@@ -43,25 +43,49 @@ export const AddItemsForm = () => {
     }
 
     return (
-        <div>
+        <div >
             <button onClick={showForm}>Add item</button>
             <div className="addItem-form" style={style}>
-            <h3>Form</h3>
+            <h2>Form</h2>
             <form onSubmit={addItemToStore}>
-                <select value={type} onChange ={(e)=> setType(e.target.value)}>
-                    <option value="helmet">Helmet</option>
-                    <option value="gauntlets">Gauntlets</option>
-                    <option value="chest">Chest</option>
-                    <option value="legs">Legs</option>
-                    <option value="classItem">Class item</option>
-                </select>
-                <input type="checkbox" checked={masterWork} onChange={(e)=> setMasterWork(e.target.checked)}/>
-                <input type="number" value={mobility} max="100" onChange={(e)=> setMobility(+e.target.value)}/>
-                <input type="number" value={resilience} max="100" onChange={(e)=> setResilience(+e.target.value)}/>
-                <input type="number" value={recovery} max="100" onChange={(e)=> setRecovery(+e.target.value)}/>
-                <input type="number" value={discipline} max="100" onChange={(e)=> setDiscipline(+e.target.value)}/>
-                <input type="number" value={intellect} max="100" onChange={(e)=> setIntelect(+e.target.value)}/>
-                <input type="number" value={strength} max="100" onChange={(e)=> setStrength(+e.target.value)}/>
+                <label>
+                    <p>Type</p>
+                    <select value={type} onChange ={(e)=> setType(e.target.value)}>
+                        <option value="helmet">Helmet</option>
+                        <option value="gauntlets">Gauntlets</option>
+                        <option value="chest">Chest</option>
+                        <option value="legs">Legs</option>
+                        <option value="classItem">Class item</option>
+                    </select>
+                </label>
+                <label>
+                    <p>Mobility</p>
+                    <input type="number" value={mobility} max="100" onChange={(e)=> setMobility(+e.target.value)}/>
+                </label>
+                <label>
+                    <p>Resilience</p>
+                    <input type="number" value={resilience} max="100" onChange={(e)=> setResilience(+e.target.value)}/>
+                </label>
+                <label>
+                    <p>Recovery</p>
+                    <input type="number" value={recovery} max="100" onChange={(e)=> setRecovery(+e.target.value)}/>
+                </label>
+                <label>
+                    <p>Discipline</p>
+                    <input type="number" value={discipline} max="100" onChange={(e)=> setDiscipline(+e.target.value)}/>
+                </label>
+                <label>
+                    <p>Intellect</p>
+                    <input type="number" value={intellect} max="100" onChange={(e)=> setIntelect(+e.target.value)}/>
+                </label>
+                <label>
+                    <p>Strength</p>
+                    <input type="number" value={strength} max="100" onChange={(e)=> setStrength(+e.target.value)}/>
+                </label>
+                <label>
+                    <p>Master work</p>
+                    <input type="checkbox" checked={masterWork} onChange={(e)=> setMasterWork(e.target.checked)}/>
+                </label>
                 <button>Submit</button>
             </form>
             </div>

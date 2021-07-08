@@ -1,0 +1,50 @@
+.addItem-form {
+    background-color: $purple;
+    display: flex;
+    position: fixed;
+    width: 500px;
+    height: 550px;
+    top: calc(50% - 275px);
+    left: calc(50% - 250px);
+    flex-direction: column;
+    justify-content: space-around;
+    border: 5px solid darken($purple, 40%);
+    border-radius: 10px;
+    color: white;
+}
+
+.addItem-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.addItem-form h2 {
+    text-align: center;
+}
+
+.addItem-form label {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.addItem-form label p {
+    width: 50px;
+}
+
+.addItem-form label input {
+    background-color: darken($purple, 20%);
+    height: 30px;
+    color: white;
+    border: none;
+    border-bottom: 4px solid darken($purple, 40%);
+}
+
+.addItem-form label select {
+    background-color: darken($purple, 20%);
+    height: 30px;
+    color: white;
+    border: none;
+}
