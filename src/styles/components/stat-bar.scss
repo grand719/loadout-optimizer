@@ -1,0 +1,14 @@
+.stat-background {
+    width: 250px;
+    height: 10px;
+    padding: 4px;
+    background-color: darken($purple, 20%);
+    border-radius: 7px;
+}
+
+
+.stat-progrss-bar {
+    height: 10px;
+    background-color: darken($purple, 30%);
+    border-radius: 7px;
+}

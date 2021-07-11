@@ -9,13 +9,13 @@ class CreateSets extends SortItems{
 
 
     showSets = (arrayOfItems) => {
-        console.log(arrayOfItems)
         return this.createSetsVarations(this.sortItems(arrayOfItems))
     }
 
     createSetsVarations = ({typeHelmet, typeGauntlets, typeChest, typeLegs, typeCloak}={}) => {
 
-        if(typeHelmet.length <= 0 || typeGauntlets.length <= 0 || typeChest.length <= 0 || typeLegs.length <= 0 || typeCloak.length <= 0) {
+        if(typeHelmet.length <= 0 || typeGauntlets.length <= 0 ||
+             typeChest.length <= 0 || typeLegs.length <= 0 || typeCloak.length <= 0) {
            throw new Error("Not enought items to create any lodouts")
         }
         

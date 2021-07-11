@@ -1,6 +1,6 @@
 .loadout-wraper {
-    background-color: darken($purple, 20%);
-    border: 4px solid $purple;
+    background-color: darken($purple, 10%);
+    border: 4px solid darken($purple, 40%);
     border-radius: 5px;
     display: flex;
     flex-direction: row;
@@ -11,5 +11,5 @@
 .loadout-wraper--items {
     display: flex;
     flex-direction: column;
-
+    justify-content: space-around;
 }

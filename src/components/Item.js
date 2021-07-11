@@ -1,9 +1,8 @@
 import React from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { removeItem } from '../actions/items'
 
 import { setItemStats } from '../actions/itemStats'
-
 
 export const Item = (
     {
@@ -34,7 +33,8 @@ export const Item = (
     const setStats = (e) => {
         const div = e.target.getBoundingClientRect()
 
-        dispatch(setItemStats({stats:{type, mobility, resilience, recovery, discipline, intellect, strength, masterWork},
+        dispatch(setItemStats({
+            stats:{type, mobility, resilience, recovery, discipline, intellect, strength, masterWork},
             options:{top: parseInt(div.top), left: parseInt(div.left), visible: true}}))
     }
 
@@ -52,7 +52,7 @@ export const Item = (
         onMouseEnter = {setStats} 
         onMouseLeave={setLeavStats}>
         {!usedByLoadout && <button className="item-delete" onClick={removeItemFromStore}>x</button> }
-        <div className="item-name">{type} </div>
+        {/* <div className="item-name">{type} </div> */}
             
         </div>
     )
