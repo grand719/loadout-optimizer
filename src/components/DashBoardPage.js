@@ -3,7 +3,7 @@ import React from 'react';
 import { ItemsList } from './ItemsList';
 import { LoadList } from './LoadoutList';
 import { ItemStats } from './ItemStats';
-
+import { FilterForm } from './FilterForm';
 
 export const DashBoardPage = () => {
 
@@ -12,6 +12,7 @@ export const DashBoardPage = () => {
             <ItemsList />
             <LoadList />
             <ItemStats />
+            <FilterForm />
         </div>
     )
 }

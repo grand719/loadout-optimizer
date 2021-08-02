@@ -2,7 +2,7 @@
     background-color: $purple;
     display: flex;
     position: fixed;
-    width: 500px;
+    width: 400px;
     height: 550px;
     top: calc(50% - 275px);
     left: calc(50% - 250px);
@@ -12,6 +12,7 @@
     border-radius: 10px;
     color: white;
     transition: 2s;
+    z-index: 1;
 }
 
 .addItem-form form{

@@ -1,14 +1,25 @@
 .stat-background {
     width: 250px;
-    height: 10px;
-    padding: 4px;
+    height: 15px;
+    padding: 6px;
     background-color: darken($purple, 20%);
     border-radius: 7px;
+    margin-bottom: 8px;
+
 }
 
+.stat-background p {
+    position: absolute;
+    width: 250px;
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
 
 .stat-progrss-bar {
-    height: 10px;
+    height: 15px;
     background-color: darken($purple, 30%);
     border-radius: 7px;
+
 }

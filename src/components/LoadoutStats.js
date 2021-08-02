@@ -7,18 +7,12 @@ export const LoadoutStats = ({intellect, mobility,
 
     return (
         <div className="loadout-stats-wraper">
-            <p>Intellect: {intellect}</p>
-                <StatBar  value={intellect}/>
-            <p>Mobility: {mobility}</p>
-                <StatBar  value={mobility}/>
-            <p>Recovery: {recovery}</p>
-                <StatBar  value={recovery}/>
-            <p>Resiliance: {resilience}</p>
-                <StatBar  value={resilience}/>
-            <p>Strength: {strength}</p>
-                <StatBar  value={strength}/>
-            <p>Discipline: {discipline}</p>
-                <StatBar  value={discipline}/>
+            <StatBar  options={{mobility}}/>
+            <StatBar  options={{resilience}}/>
+            <StatBar  options={{discipline}}/>
+            <StatBar  options={{intellect}}/>
+            <StatBar  options={{strength}}/>
+            <StatBar  options={{recovery}}/>
         </div>
     )
 

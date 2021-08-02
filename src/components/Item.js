@@ -1,5 +1,5 @@
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch} from 'react-redux'
 import { removeItem } from '../actions/items'
 
 import { setItemStats } from '../actions/itemStats'
@@ -35,7 +35,7 @@ export const Item = (
 
         dispatch(setItemStats({
             stats:{type, mobility, resilience, recovery, discipline, intellect, strength, masterWork},
-            options:{top: parseInt(div.top), left: parseInt(div.left), visible: true}}))
+            options:{top: parseInt(div.top), left: parseInt(div.left), visible: true, height: div.height}}))
     }
 
     const setLeavStats = (e) => {
@@ -43,7 +43,7 @@ export const Item = (
 
         dispatch(setItemStats({
             stats:{type, mobility, resilience, recovery, discipline, intellect, strength, masterWork},
-            options:{top: parseInt(div.top), left: parseInt(div.left), visible: false}
+            options:{top: parseInt(div.top), left: parseInt(div.left), visible: false, height: div.height}
             }))
     }
 
@@ -52,8 +52,6 @@ export const Item = (
         onMouseEnter = {setStats} 
         onMouseLeave={setLeavStats}>
         {!usedByLoadout && <button className="item-delete" onClick={removeItemFromStore}>x</button> }
-        {/* <div className="item-name">{type} </div> */}
-            
         </div>
     )
 } 

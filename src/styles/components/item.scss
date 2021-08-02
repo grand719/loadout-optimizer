@@ -1,7 +1,8 @@
 .item-wraper {
-    background-color: $purple;
+    background: url('/images/item_bg.png');
+    background-size: cover;
     border: 2px solid $purple;
-    border-radius: 5px;
+    border-radius: 7px;
     box-sizing: border-box;
     position: relative;
     width: 50px;
@@ -11,7 +12,7 @@
 
 .item-masterwork {
     border: 4px solid gold;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .item-name {
