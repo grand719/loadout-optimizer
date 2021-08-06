@@ -14,20 +14,20 @@ import './styles/styles.scss';
 const store = configureStore();
 
 store.dispatch(addItem({type: "helmet", masterWork: true, 
-mobility: 0,resilience: 10,recovery:20,discipline:30,intellect:50,strength:60}))
+mobility: 0,resilience: 10,recovery:20,discipline:30,intellect:10,strength:10}))
 
 store.dispatch(addItem({type: "chest", masterWork: true, 
-mobility: 0,resilience: 10,recovery:20,discipline:30,intellect:50,strength:60}))
+mobility: 0,resilience: 10,recovery:20,discipline:30,intellect:10,strength:10}))
 
 store.dispatch(addItem({type: "chest", masterWork: true, 
-mobility: 0,resilience: 10,recovery:20,discipline:30,intellect:50,strength:60}))
+mobility: 0,resilience: 10,recovery:10,discipline:10,intellect:10,strength:10}))
 
 store.dispatch(addItem({type: "gauntlets", masterWork: true, 
-mobility: 0,resilience: 10,recovery:20,discipline:30,intellect:50,strength:60}))
+mobility: 0,resilience: 10,recovery:20,discipline:10,intellect:10,strength:10}))
 store.dispatch(addItem({type: "legs", masterWork: true, 
-mobility: 0,resilience: 10,recovery:20,discipline:30,intellect:50,strength:60}))
+mobility: 0,resilience: 10,recovery:20,discipline:10,intellect:20,strength:10}))
 store.dispatch(addItem({type: "classItem", masterWork: true, 
-mobility: 0,resilience: 10,recovery:20,discipline:30,intellect:50,strength:60}))
+mobility: 0,resilience: 10,recovery:20,discipline:30,intellect:10,strength:10}))
 
 const state = store.getState();
 

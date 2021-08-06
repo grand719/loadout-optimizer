@@ -60,27 +60,27 @@ export const AddItemsForm = () => {
                 </label>
                 <label>
                     <p>Mobility</p>
-                    <input type="number" value={mobility} max="100" onChange={(e)=> setMobility(+e.target.value)}/>
+                    <input type="range" value={mobility} min="0" max="100" onChange={(e)=> setMobility(+e.target.value)}/>
                 </label>
                 <label>
                     <p>Resilience</p>
-                    <input type="number" value={resilience} max="100" onChange={(e)=> setResilience(+e.target.value)}/>
+                    <input type="range" value={resilience} min="0" max="100" onChange={(e)=> setResilience(+e.target.value)}/>
                 </label>
                 <label>
                     <p>Recovery</p>
-                    <input type="number" value={recovery} max="100" onChange={(e)=> setRecovery(+e.target.value)}/>
+                    <input type="range" value={recovery} min="0" max="100" onChange={(e)=> setRecovery(+e.target.value)}/>
                 </label>
                 <label>
                     <p>Discipline</p>
-                    <input type="number" value={discipline} max="100" onChange={(e)=> setDiscipline(+e.target.value)}/>
+                    <input type="range" value={discipline} min="0" max="100" onChange={(e)=> setDiscipline(+e.target.value)}/>
                 </label>
                 <label>
                     <p>Intellect</p>
-                    <input type="number" value={intellect} max="100" onChange={(e)=> setIntelect(+e.target.value)}/>
+                    <input type="range" value={intellect} min="0" max="100" onChange={(e)=> setIntelect(+e.target.value)}/>
                 </label>
                 <label>
                     <p>Strength</p>
-                    <input type="number" value={strength} max="100" onChange={(e)=> setStrength(+e.target.value)}/>
+                    <input type="range" value={strength} min="0" max="100" onChange={(e)=> setStrength(+e.target.value)}/>
                 </label>
                 <label>
                     <p>Master work</p>

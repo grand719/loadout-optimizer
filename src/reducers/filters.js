@@ -1,10 +1,10 @@
 const filterDefaultState = {
-    mobility: "0-0",
-    resilience: "0-0",
-    recovery: "0-0",
-    discipline: "0-0",
-    intellect: "0-0",
-    strength: "0-0"
+    mobility: "0-200",
+    resilience: "0-200",
+    recovery: "0-200",
+    discipline: "0-200",
+    intellect: "0-200",
+    strength: "0-200"
 }
 
 export default  (state = filterDefaultState, action)=>{

@@ -4,9 +4,6 @@ const statSelector = (requremants, item) => {
     for(const statsName in requremants){
         
         let splitedStats = requremants[statsName].split("-")
-        if(splitedStats[1] === "0") {
-            splitedStats[1] = "500"
-        }
         
         if(item.stats[statsName] >= +splitedStats[0] && item.stats[statsName] <= +splitedStats[1]){
          trueCount ++   

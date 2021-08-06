@@ -1,13 +1,18 @@
+.filters-form--wrapper__main {
+    width: 300px;
+}
+
 .filters-form--wrapper{
     position: fixed;
-    top: 0px;
-    left: 52%;
+    top: 0;
+    margin-top: 80px;
+    margin-left: 50px;
     color: white;
 }
 
 .filters-form--wrapper h2{
     background-color: darken($purple, 20%);
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     margin: 0;
     margin-top: 5px;
@@ -24,10 +29,5 @@
     margin-bottom: 6px;
 }
 .filters-form--wrapper form input{
-    width: 150px;
-    background-color: darken($purple, 30%);
-    border: none;
     color: white;
-    border-bottom: 2px solid $purple;
-    padding: 5px;
 }

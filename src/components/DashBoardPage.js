@@ -12,7 +12,9 @@ export const DashBoardPage = () => {
             <ItemsList />
             <LoadList />
             <ItemStats />
-            <FilterForm />
+            <div className="filters-form--wrapper__main">
+                <FilterForm />
+            </div>
         </div>
     )
 }
